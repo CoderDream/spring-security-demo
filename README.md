@@ -2,7 +2,21 @@
 
 
 
-version 3.0
+## version 4.0 使用数据库进行用户认证(form login using database) ##
+
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v4.0/v40001.png)
+
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v4.0/v40002.png)
+
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v4.0/v40003.png)
+
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v4.0/v40004.png)
+
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v4.0/v40005.png)
+
+
+
+## version 3.0 ##
 再次访问/admin，会弹出下面的对话框：
 
 ![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v3.0/v30001.png)
@@ -14,7 +28,7 @@ version 3.0
 
 
 
-version 2.0
+## version 2.0 ##
 运行效果：
 
 登录页正常显示的截图
@@ -36,7 +50,7 @@ version 2.0
 
 
 
-version 1.0
+## version 1.0 ##
 运行效果：
 
 访问/welcome时，毫无阻力

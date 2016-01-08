@@ -22,19 +22,16 @@ public class HelloController {
 		model.addObject("message", "This is default page!");
 		model.setViewName("hello");
 		return model;
-
 	}
 
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)
 	public ModelAndView admin() {
-
 		ModelAndView model = new ModelAndView();
 		model.addObject("title",
 				"Spring Security Login Form - Database Authentication");
 		model.addObject("message", "This page is for ROLE_ADMIN only!");
 		model.setViewName("admin");
 		return model;
-
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
@@ -53,7 +50,6 @@ public class HelloController {
 		model.setViewName("login");
 
 		return model;
-
 	}
 
 	// for 403 access denied page
@@ -72,7 +68,6 @@ public class HelloController {
 
 		model.setViewName("comm/403");
 		return model;
-
 	}
 
 }
