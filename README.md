@@ -1,6 +1,19 @@
 # spring-security-demo
 
 
+
+version 3.0
+再次访问/admin，会弹出下面的对话框：
+
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v3.0/v30001.png)
+
+
+有点象访问局域网共享时，windows弹出的输入用户名/密码对话框，输入spring-security.xml里定义的用户名/密码后，就可以访问了，so easy!
+
+要注意的是：每次关闭浏览器后，登录即自动过期，生命周期有点类似Session
+
+
+
 version 2.0
 运行效果：
 
