@@ -45,6 +45,13 @@
 					<td><input type='password' name='password' id="password" /></td>
 				</tr>
 				<tr>
+					<td></td>
+					<td><input type="checkbox" name="remember-me" id="remember-me"/>   
+					<label for="remember-me">remember me</label>
+					</td>
+				</tr>
+				
+				<tr>
 					<td colspan='2'><input name="submit" type="submit"
 						value="submit" /></td>
 				</tr>

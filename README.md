@@ -3,9 +3,28 @@
 
 ----------
 
+## version 7.0 Remember Me(下次自动登录) ##
 
 
 
+这样处理后，勾选Remember me登录会在PERSISTENT_LOGINS表中，生成一条记录：
+
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v7.0/v60001.png)
+
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v7.0/v60002.png)
+
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v7.0/v60003.png)
+
+
+logout时，该记录以及客户端的cookie都会同时清空。
+
+参考文章：
+
+[Spring Security笔记：Remember Me(下次自动登录)](http://www.cnblogs.com/yjmyzz/p/remember-me-sample-in-spring-security3.html)
+
+[Spring Security Remember Me Example](http://www.mkyong.com/spring-security/spring-security-remember-me-example/)
+
+----------
 ## version 6.0 登录尝试次数限制 ##
 运行效果
 
@@ -27,7 +46,11 @@
 
 而且该用户的“是否未锁定”字段值为0，如果要手动解锁，把该值恢复为1，并将T_USER_ATTEMPTS中的尝试次数，改到3以下即可。
 
-参考文章： [Spring Security : limit login attempts example](http://www.mkyong.com/spring-security/spring-security-limit-login-attempts-example/#)
+参考文章：
+
+[Spring Security笔记：登录尝试次数限制](http://www.cnblogs.com/yjmyzz/p/limit-login-attempts-in-spring-security3.html)
+
+ [Spring Security : limit login attempts example](http://www.mkyong.com/spring-security/spring-security-limit-login-attempts-example/#)
 
 ----------
 
@@ -43,7 +66,15 @@ bcrypt算法与md5/sha算法有一个很大的区别，每次生成的hash值都
 
 tips:如果你仍然喜欢用传统的sha算法来处理密码，只要把23行改成 <password-encoder hash="sha" />  就可以了。
 
-参考文章：[Spring Security password hashing example](http://www.mkyong.com/spring-security/spring-security-password-hashing-example/)
+参考文章：
+
+[Spring Security笔记：使用BCrypt算法加密存储登录密码](http://www.cnblogs.com/yjmyzz/p/use-bcrypt-algorithm-hashing-password-in-spring-security3.html)
+
+[Spring Security password hashing example](http://www.mkyong.com/spring-security/spring-security-password-hashing-example/)
+
+
+----------
+
 
 ## version 4.0 使用数据库进行用户认证(form login using database) ##
 
@@ -58,7 +89,13 @@ tips:如果你仍然喜欢用传统的sha算法来处理密码，只要把23行�
 ![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v4.0/v40005.png)
 
 参考：
+
+[Spring Security笔记：使用数据库进行用户认证(form login using database)](http://www.cnblogs.com/yjmyzz/p/form-login-using-database-with-spring-security3.html)
+
 [http://www.mkyong.com/spring-security/spring-security-form-login-using-database/](http://www.mkyong.com/spring-security/spring-security-form-login-using-database/ "http://www.mkyong.com/spring-security/spring-security-form-login-using-database/")
+
+
+----------
 
 ## version 3.0 ##
 再次访问/admin，会弹出下面的对话框：
@@ -70,7 +107,13 @@ tips:如果你仍然喜欢用传统的sha算法来处理密码，只要把23行�
 
 要注意的是：每次关闭浏览器后，登录即自动过期，生命周期有点类似Session
 
+参考文章： 
 
+[Spring Security笔记：使用数据库进行用户认证(form login using database)](http://www.cnblogs.com/yjmyzz/p/form-login-using-database-with-spring-security3.html)
+
+[Spring Security Form Login Using Database](http://www.mkyong.com/spring-security/spring-security-form-login-using-database/)
+
+----------
 
 ## version 2.0 ##
 运行效果：
@@ -92,6 +135,12 @@ tips:如果你仍然喜欢用传统的sha算法来处理密码，只要把23行�
 
 防跨站提交攻击的_csrf隐藏域，会生成一个随机的类似guid字符串来做校验，以确定本次http post确实是从本页面发起的，这跟asp.net里mac ViewState的思路一致。
 
+参考文章： 
+
+[Spring Security笔记：HTTP Basic 认证](http://www.cnblogs.com/yjmyzz/p/3851235.html)
+
+
+----------
 
 
 ## version 1.0 ##
@@ -108,3 +157,8 @@ tips:如果你仍然喜欢用传统的sha算法来处理密码，只要把23行�
 在登录页面输入yjmyzz/123456后，自动跳转到登录前的页面 /admin
 
 ![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v1.0/v10003.png)
+
+
+参考文章： 
+
+[Spring Security笔记：自定义登录页](http://www.cnblogs.com/yjmyzz/p/how-to-custom-login-form-page-with-spring-security3.html)

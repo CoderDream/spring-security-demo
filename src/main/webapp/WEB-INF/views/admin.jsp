@@ -1,4 +1,5 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
 <%@page session="true"%>
 <html>
 <body>
@@ -7,8 +8,7 @@
 
 	<c:url value="/j_spring_security_logout" var="logoutUrl" />
 	<form action="${logoutUrl}" method="post" id="logoutForm">
-		<input type="hidden" name="${_csrf.parameterName}"
-			value="${_csrf.token}" />
+		<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 	</form>
 	<script>
 		function formSubmit() {
@@ -22,6 +22,10 @@
 				href="javascript:formSubmit()"> Logout</a> | <a href="welcome">welcome</a>
 		</h2>
 	</c:if>
+
+	<sec:authorize access="isRememberMe()">
+		<h2>${warning}</h2>
+	</sec:authorize>
 
 </body>
 </html>
