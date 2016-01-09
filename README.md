@@ -1,5 +1,31 @@
-# spring-security-demo
+# spring-security-demo #
 
+
+----------
+
+
+
+
+## version 6.0 登录尝试次数限制 ##
+运行效果
+
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v6.0/v60001.png)
+
+连续3次输错密码后，将看到下面的提示
+
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v6.0/v60002.png)
+
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v6.0/v60005.png)
+
+这时如果查下数据库，会看到
+
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v6.0/v60003.png)
+
+错误尝试次数，在db中已经达到阀值3
+
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v6.0/v60004.png)
+
+而且该用户的“是否未锁定”字段值为0，如果要手动解锁，把该值恢复为1，并将T_USER_ATTEMPTS中的尝试次数，改到3以下即可。
 
 ## version 5.0 使用BCrypt算法加密存储登录密码 ##
 
