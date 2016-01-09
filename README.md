@@ -1,6 +1,16 @@
 # spring-security-demo
 
 
+## version 5.0 使用BCrypt算法加密存储登录密码 ##
+
+
+bcrypt算法与md5/sha算法有一个很大的区别，每次生成的hash值都是不同的，这样暴力猜解起来或许要更困难一些。同时大家可能也发现了，加密后的字符长度比较长，有60位，所以用户表中密码字段的长度，如果打算采用bcrypt加密存储，字段长度不得低于60。
+
+最后要做的事情，就是把db中原来明文的密码值，改成经过bcrypt加密后的字符串即可。
+
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v5.0/v50001.png)
+
+tips:如果你仍然喜欢用传统的sha算法来处理密码，只要把23行改成 <password-encoder hash="sha" />  就可以了
 
 ## version 4.0 使用数据库进行用户认证(form login using database) ##
 
@@ -14,7 +24,8 @@
 
 ![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v4.0/v40005.png)
 
-
+参考：
+[http://www.mkyong.com/spring-security/spring-security-form-login-using-database/](http://www.mkyong.com/spring-security/spring-security-form-login-using-database/ "http://www.mkyong.com/spring-security/spring-security-form-login-using-database/")
 
 ## version 3.0 ##
 再次访问/admin，会弹出下面的对话框：
