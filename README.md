@@ -79,7 +79,7 @@ tips:如果你仍然喜欢用传统的sha算法来处理密码，只要把23行�
 ----------
 
 
-## version 4.0 使用数据库进行用户认证(form login using database) ##
+## version 4.0 使用数据库进行用户认证 ##
 
 ![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v4.0/v40001.png)
 
@@ -91,24 +91,6 @@ tips:如果你仍然喜欢用传统的sha算法来处理密码，只要把23行�
 
 ![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v4.0/v40005.png)
 
-参考：
-
-[Spring Security笔记：使用数据库进行用户认证(form login using database)](http://www.cnblogs.com/yjmyzz/p/form-login-using-database-with-spring-security3.html)
-
-[http://www.mkyong.com/spring-security/spring-security-form-login-using-database/](http://www.mkyong.com/spring-security/spring-security-form-login-using-database/ "http://www.mkyong.com/spring-security/spring-security-form-login-using-database/")
-
-
-----------
-
-## version 3.0 ##
-再次访问/admin，会弹出下面的对话框：
-
-![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v3.0/v30001.png)
-
-
-有点象访问局域网共享时，windows弹出的输入用户名/密码对话框，输入spring-security.xml里定义的用户名/密码后，就可以访问了，so easy!
-
-要注意的是：每次关闭浏览器后，登录即自动过期，生命周期有点类似Session
 
 参考文章： 
 
@@ -118,7 +100,28 @@ tips:如果你仍然喜欢用传统的sha算法来处理密码，只要把23行�
 
 ----------
 
-## version 2.0 ##
+## version 3.0 HTTP Basic 认证##
+再次访问/admin，会弹出下面的对话框：
+
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v3.0/v30001.png)
+
+
+有点象访问局域网共享时，windows弹出的输入用户名/密码对话框，输入spring-security.xml里定义的用户名/密码后，就可以访问了，so easy!
+
+要注意的是：每次关闭浏览器后，登录即自动过期，生命周期有点类似Session
+
+
+
+
+参考文章： 
+
+[Spring Security笔记：HTTP Basic 认证](http://www.cnblogs.com/yjmyzz/p/3851235.html)
+
+
+
+----------
+
+## version 2.0 自定义登录页##
 运行效果：
 
 登录页正常显示的截图
@@ -138,15 +141,15 @@ tips:如果你仍然喜欢用传统的sha算法来处理密码，只要把23行�
 
 防跨站提交攻击的_csrf隐藏域，会生成一个随机的类似guid字符串来做校验，以确定本次http post确实是从本页面发起的，这跟asp.net里mac ViewState的思路一致。
 
+
 参考文章： 
 
-[Spring Security笔记：HTTP Basic 认证](http://www.cnblogs.com/yjmyzz/p/3851235.html)
-
+[Spring Security笔记：自定义登录页](http://www.cnblogs.com/yjmyzz/p/how-to-custom-login-form-page-with-spring-security3.html)
 
 ----------
 
 
-## version 1.0 ##
+## version 1.0 Hello World##
 运行效果：
 
 访问/welcome时，毫无阻力
@@ -164,4 +167,4 @@ tips:如果你仍然喜欢用传统的sha算法来处理密码，只要把23行�
 
 参考文章： 
 
-[Spring Security笔记：自定义登录页](http://www.cnblogs.com/yjmyzz/p/how-to-custom-login-form-page-with-spring-security3.html)
+[Spring Security笔记：Hello World](http://www.cnblogs.com/yjmyzz/p/spring-security-with-spring-mvc-helloworld.html)
