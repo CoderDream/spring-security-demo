@@ -27,6 +27,11 @@
 
 而且该用户的“是否未锁定”字段值为0，如果要手动解锁，把该值恢复为1，并将T_USER_ATTEMPTS中的尝试次数，改到3以下即可。
 
+参考文章： [Spring Security : limit login attempts example](http://www.mkyong.com/spring-security/spring-security-limit-login-attempts-example/#)
+
+----------
+
+
 ## version 5.0 使用BCrypt算法加密存储登录密码 ##
 
 
