@@ -111,8 +111,6 @@ tips:如果你仍然喜欢用传统的sha算法来处理密码，只要把23行�
 要注意的是：每次关闭浏览器后，登录即自动过期，生命周期有点类似Session
 
 
-
-
 参考文章： 
 
 [Spring Security笔记：HTTP Basic 认证](http://www.cnblogs.com/yjmyzz/p/3851235.html)
@@ -125,6 +123,7 @@ tips:如果你仍然喜欢用传统的sha算法来处理密码，只要把23行�
 运行效果：
 
 登录页正常显示的截图
+
 ![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v2.0/v20001.png)
 
 
