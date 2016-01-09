@@ -6,14 +6,17 @@
 ## version 7.0 Remember Me(下次自动登录) ##
 
 
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v7.0/v70001.png)
+
+登陆时如果勾选了【remember me】，则即使关闭了浏览器，再打开相关链接时，也不需要输入登陆信息：
+
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v7.0/v70002.png)
+
 
 这样处理后，勾选Remember me登录会在PERSISTENT_LOGINS表中，生成一条记录：
 
-![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v7.0/v60001.png)
 
-![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v7.0/v60002.png)
-
-![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v7.0/v60003.png)
+![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v7.0/v70003.png)
 
 
 logout时，该记录以及客户端的cookie都会同时清空。
