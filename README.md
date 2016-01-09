@@ -10,7 +10,9 @@ bcrypt算法与md5/sha算法有一个很大的区别，每次生成的hash值都
 
 ![](https://raw.githubusercontent.com/CoderDream/spring-security-demo/master/doc/snapshot/v5.0/v50001.png)
 
-tips:如果你仍然喜欢用传统的sha算法来处理密码，只要把23行改成 <password-encoder hash="sha" />  就可以了
+tips:如果你仍然喜欢用传统的sha算法来处理密码，只要把23行改成 <password-encoder hash="sha" />  就可以了。
+
+参考文章：[Spring Security password hashing example](http://www.mkyong.com/spring-security/spring-security-password-hashing-example/)
 
 ## version 4.0 使用数据库进行用户认证(form login using database) ##
 
